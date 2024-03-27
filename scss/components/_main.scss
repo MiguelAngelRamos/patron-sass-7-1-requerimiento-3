@@ -19,6 +19,27 @@
   width: calc(20% - 2rem);
 }
 
+
+
+.main__section--productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.main__section-producto {
+  /* la propiedad flex conbina 3 propiedades
+  flex-grow, flex-shrink, flex-basis */
+  flex: 0 1 calc(33.333% - 2rem);
+  margin: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+// .main__section-producto-img {
+//   margin: 1rem;
+//   width: calc(33.333% - 2rem);
+// }
 /* Estilos del main del formulario */
 
 .main__section-form {
