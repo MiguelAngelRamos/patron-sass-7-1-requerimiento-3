@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
 body, .header__title, .main__section-title, .main__section-text, .header__nav, .header__nav-link {
   margin: 0;
   padding: 0;
@@ -7,6 +11,9 @@ body, .header__title, .main__section-title, .main__section-text, .header__nav, .
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header__title, .main__section-title, .main__section-text {
@@ -14,6 +21,8 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
@@ -38,6 +47,15 @@ body {
 }
 
 /* Estilos de galería de images */
+.main {
+  margin-top: 8rem;
+  flex: 1;
+}
+
+.main__section {
+  padding: 8px;
+}
+
 .main__section-galeria {
   display: flex;
   flex-wrap: wrap;
@@ -87,10 +105,15 @@ body {
   background-color: rgba(183, 173, 173, 0.768627451);
   text-align: center;
   padding: 20px;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.footer__social-icons {
+  text-align: right;
+  margin-right: 2rem;
+  font-size: 1.5rem;
 }
 
 /* Notebook*/

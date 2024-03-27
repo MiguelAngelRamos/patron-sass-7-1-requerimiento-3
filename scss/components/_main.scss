@@ -1,7 +1,13 @@
 @use '../abstracts/variables' as *;
 
 /* Estilos de galería de images */
-
+.main {
+  margin-top: 8rem;
+  flex: 1;
+}
+.main__section {
+  padding: 8px;
+}
 .main__section-galeria {
   display: flex;
   flex-wrap: wrap;

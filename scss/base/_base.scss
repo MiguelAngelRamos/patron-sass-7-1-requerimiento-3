@@ -1,5 +1,9 @@
 @use '../abstracts/variables' as *;
 
+* {
+  box-sizing: border-box;
+}
+
 body, .header__title, .main__section-title, .main__section-text, .header__nav, .header__nav-link {
   margin: 0;
   padding: 0;
@@ -8,6 +12,9 @@ body, .header__title, .main__section-title, .main__section-text, .header__nav, .
 
 body {
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header__title, .main__section-title, .main__section-text {

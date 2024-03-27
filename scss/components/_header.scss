@@ -1,6 +1,8 @@
 @use '../abstracts/variables' as *;
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: $background-color-header;
   padding: 20px;
   text-align: center;
